@@ -4,7 +4,7 @@
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)
 
 #### About this project
-- Created a dataset of tv shows which has rating greater than 6.0 and has more than 10,000 votes and has been released after 1970 and before 2022 by scraping [the imdb website](https://www.imdb.com/search/title/?title_type=tv_series,tv_miniseries&release_date=1970-01-01,2022-02-12&user_rating=6.0,10.0&num_votes=10000,&languages=en&sort=user_rating,desc&count=100&start=) and saving the dataframe to a csv file.
+- Created a dataset of tv shows which has rating greater than 6.0 and has more than 10,000 votes and has been released after 1970 and before 2022 by scraping [the IMDb website](https://www.imdb.com/search/title/?title_type=tv_series,tv_miniseries&release_date=1970-01-01,2022-02-12&user_rating=6.0,10.0&num_votes=10000,&languages=en&sort=user_rating,desc&count=100&start=) using [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) library and saving the dataframe to a csv file.
 - The dataset contains the following columns:
   - **Title:** The title of the tv show
   - **Year:** The year the tv show was released
