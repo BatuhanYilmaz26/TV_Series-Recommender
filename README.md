@@ -12,7 +12,7 @@
   - **Genre:** The genre of the tv show
   - **Rating:** The rating of the tv show
   - **Votes:** The votes of the tv show
-- The recommender system uses the K-Nearest Neighbors algorithm to recommend movies based on the user's preferences.
-- Retrieved the movie trailers for recommended movies dynamically, using [Youtube Data API v3](https://developers.google.com/youtube/v3).
+- The recommender system uses the K-Nearest Neighbors algorithm to recommend tv series based on the user's preferences.
+- Retrieved the tv series trailers for recommended tv series dynamically, using [Youtube Data API v3](https://developers.google.com/youtube/v3).
 - Built the web app using Streamlit and deployed it on Heroku.
 - You can take a look at the [interactive demo](https://tv-series-rec.herokuapp.com) to see how the recommender system works.
