@@ -15,3 +15,4 @@
 - The recommender system uses the K-Nearest Neighbors algorithm to recommend movies based on the user's preferences.
 - Retrieved the movie trailers for recommended movies dynamically, using [Youtube Data API v3](https://developers.google.com/youtube/v3).
 - Built the web app using Streamlit and deployed it on Heroku.
+- You can take a look at the [interactive demo](https://tv-series-rec.herokuapp.com) to see how the recommender system works.
