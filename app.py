@@ -64,10 +64,12 @@ def get_tv_info(imdb_link):
     tv_year = tv_title.split("(")[1].split(")")[0]
     tv_cast = str(tv_description[1]).replace("With", "Cast: ").strip()
     tv_story = "Plot Summary: " + s_data.find("span", {"data-testid": "plot-xl"}).text + "."
-    rating = s_data.find("div", class_="AggregateRatingButton__TotalRatingAmount-sc-1ll29m0-3 jkCVKJ")
-    rating = str(rating).split('<div class="AggregateRatingButton__TotalRatingAmount-sc-1ll29m0-3 jkCVKJ')
-    rating = str(rating[1]).split("</div>")
-    rating = str(rating[0]).replace(''' "> ''', '').replace('">', '')
+    #get rating from span class="sc-7ab21ed2-1 jGRxWM"
+    # rating = s_data.find("span", {"class": "sc-7ab21ed2-1 jGRxWM"}).text
+    # get  total votes from div class = "sc-7ab21ed2-3 dPVcnq"
+    rating = s_data.find("div", {"class": "sc-7ab21ed2-3 dPVcnq"}).text 
+    
+
 
     # get genres from df if imdb_link are matching
     if imdb_link in df["IMDB_Link"].values:
