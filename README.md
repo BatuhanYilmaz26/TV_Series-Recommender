@@ -19,3 +19,5 @@
 - Built the web app using [Streamlit](https://streamlit.io) and deployed it on [Heroku](https://www.heroku.com
 ).
 - You can take a look at the [interactive demo](https://tv-series-rec.herokuapp.com) to see how the recommender system works.
+
+![](tv_series_recommender.gif)
